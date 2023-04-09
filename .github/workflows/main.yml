@@ -5,7 +5,7 @@ on:
     branches: ["main"]
 
 env:
-  AWS_REGION: ap-northeast-1
+  AWS_REGION: ap-northeaset-1
   ECS_SERVICE: simple-cicd-service
   ECS_CLUSTER: simple-cicd-cluster
   ECS_TASK_DEFINITION: .aws/task-definition.json
@@ -126,5 +126,27 @@ jobs:
           service: ${{ env.ECS_SERVICE }}
           cluster: ${{ env.ECS_CLUSTER }}
           wait-for-service-stability: true
+
+# Web Container Build/Test
+## Get Source
+## Build/Test
+## Docker Image Build
+## Login AWS
+## Push image to ECR
+
+# API Container Build/Test
+## Get Source
+## Build/Test
+## Docker Image Build
+## Login AWS
+## Push image to ECR
+
+# Deploy
+## Get Source
+## Login AWS
+## Edit Task Definition
+## Deploy
+
+
 
 
