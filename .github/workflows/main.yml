@@ -13,7 +13,6 @@ env:
 permissions:
   contents: read
 
-
 jobs:
   web-test-build-image:
     name: Web Container - Test and Build
